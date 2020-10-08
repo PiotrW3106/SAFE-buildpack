@@ -49,5 +49,7 @@ dotnet tool install --global Paket --version 6.0.0-alpha042
 
 cd $BUILD_DIR
 
-paket install
+echo "doing *** paket install *** "
+paket install --verbose
+echo "Doing *** fake build *** "
 fake build
