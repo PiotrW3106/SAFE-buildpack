@@ -44,8 +44,8 @@ echo "DOTNET_ROOT set to $DOTNET_ROOT"
 echo "Installing fake"
 dotnet tool install fake-cli -g
 
-echo "Installing paket -----  yay NOTE not global as problem i.e. without -g option"
-dotnet tool install paket
+echo "Installing paket -----  yay NOTE global but with specific version"
+dotnet tool install --global Paket --version 5.219.5
 
 cd $BUILD_DIR
 
