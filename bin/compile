@@ -45,7 +45,7 @@ echo "Installing fake"
 dotnet tool install fake-cli -g
 
 echo "Installing paket -----  yay NOTE global but with specific version"
-dotnet tool install --global Paket --version 6.0.0-alpha042
+dotnet tool install --global Paket 
 
 cd $BUILD_DIR
 
